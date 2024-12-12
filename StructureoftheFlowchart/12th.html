@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="levels.css">
+  <title>12th Grade Roadmap</title>
+  <header>
+    <div class="logo">
+        <div class="logo-icon">
+            <!-- Stylized "C" with arrows (using an SVG or placeholder for illustration) -->
+            <img src="/images/ctc.jpg" width="30" height="30" style="border: none; background: none;">
+            </svg>
+        </div>
+        <div class="logo-text">CrackTheCareer</div>
+    </div>
+    <nav>
+        
+            <a href="/careerroadmap/index1.html">Home</a>
+            <a href="#">About</a>
+            <a href="#contact-section">Contact</a>
+            <a href="#">Resources</a>
+            <div class="dropdown">
+              <a href="#" class="account-icon">
+                  <i class="fa-solid fa-user"></i>
+              </a>
+              <div class="dropdown-menu">
+                  <a id="logoutButton" href="#">Logout</a>
+              </div>
+          </div>
+        
+    </nav>
+</header>
+  
+</head>
+<body>
+  <div class="roadmap-container">
+    <h1>12th Grade Roadmap: Steps to Becoming a Software Engineer</h1>
+    <p class="intro">Here’s what you need to focus on in Class 12th to excel in software engineering.</p>
+    <div class="flowchart">
+      <!-- Sub-topic 1: Advanced Mathematics -->
+      <div class="roadmap-level">
+        <div class="roadmap-box math-box">
+          <h2>Advanced Mathematics</h2>
+          
+          <ul>
+            <li>Master Calculus (Derivatives and Integrals)</li>
+            <li>Learn Matrix Algebra</li>
+            <li>Understand Probability and Combinatorics</li>
+          </ul>
+          <p><strong>Resources:</strong> Khan Academy, NCERT Textbooks, and Brilliant.org</p>
+          <button onclick="window.location.href='advanced-math.html'">Learn More</button>
+        </div>
+        <div class="arrow"></div>
+      </div>
+
+      <!-- Sub-topic 2: Intermediate Programming -->
+      <div class="roadmap-level">
+        <div class="roadmap-box programming-box">
+          <h2>Intermediate Programming</h2>
+          
+          <ul>
+            <li>Learn OOP Concepts (Java, Python, or C++)</li>
+            <li>Write Small Programs (e.g., Sorting, Searching)</li>
+            <li>Build Mini Projects (e.g., Expense Tracker)</li>
+          </ul>
+          <p><strong>Resources:</strong> GeeksforGeeks, Codecademy, and W3Schools</p>
+          <button onclick="window.location.href='intermediate-programming.html'">Learn More</button>
+        </div>
+        <div class="arrow"></div>
+      </div>
+
+      <!-- Sub-topic 3: Entrance Exam Preparation -->
+      <div class="roadmap-level">
+        <div class="roadmap-box logic-box">
+          <h2>Entrance Exam Prep</h2>
+         
+          <ul>
+            <li>Prepare for Competitive Exams (JEE, CET)</li>
+            <li>Focus on Logical Reasoning & Quantitative Aptitude</li>
+            <li>Practice Past Year Papers and Mock Tests</li>
+          </ul>
+          <p><strong>Resources:</strong> Embibe, Aakash BYJU’s, and Allen</p>
+          <button onclick="window.location.href='exam-prep.html'">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="contact-section">
+    <footer>
+      <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">FAQs</a>
+      </div>
+      <div class="contact-info">
+          <p>Email: info@crackthecareer.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+      </div>
+    </footer>
+  </section>
+
+  <script>
+    document.getElementById("logoutButton").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        // Redirect to index.html
+        window.location.href = "../careerroadmap/index.html";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #333231, #302c2b); /* Warm gradient background */
+  color: #333;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #2E4053; /* Navy Blue background */
+  color: #FFFFFF; /* White text */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo-icon {
+  margin-right: 10px;
+}
+
+header .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 2.5rem;
+  color: #b3ceeb;
+  text-shadow: 2px 2px 4px #ffa07a;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px;
+  font-size: 1rem;
+  color: #6ef937;
+  text-shadow: 2px 2px 4px #af81fa;
+}
+
+/* Roadmap Container */
+.roadmap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Roadmap Layout - Vertical Flowchart */
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between boxes */
+}
+
+/* Roadmap Boxes */
+.roadmap-box {
+  background: linear-gradient(to bottom right, #edf0ed, #f0f5f0); /* Green gradient */
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(252, 251, 251, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 80%; /* Makes the box responsive */
+  max-width: 500px; /* Limits box width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.roadmap-box h2 {
+  color: #0f0f0f;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.roadmap-box ul {
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.roadmap-box li {
+  font-size: 1.1rem;
+  color: #0e0e0e;
+  margin: 8px 0;
+}
+
+.roadmap-box button {
+  background: #ee1905;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.roadmap-box button:hover {
+  background: #ff8364;
+}
+
+/* Hover Animation for Roadmap Box */
+.roadmap-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Colorful Arrows */
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #1818bd, #f7f3f3, #f3eeee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: bounce 2s infinite;
+}
+
+footer {
+  background-color: #003366; /* Navy Blue */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+footer .contact-info {
+  margin-top: 20px;
+}
+
+footer .contact-info p {
+  margin: 5px 0;
+}
+
+footer .contact-info a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+nav .account-icon i {
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  margin-right: 5px;
+  background-color: #D3D3D3;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+nav .account-icon  i:hover {
+  color: black;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Navigation Styling */
+nav {
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  align-items: center; /* Centers the links vertically */
+  gap: 20px; /* Adds spacing between each link */
+  padding: 10px 0; /* Adds top and bottom padding */
+}
+
+nav a {
+  text-decoration: none; /* Removes underline from links */
+  color: #fff; /* Link color */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  padding: 5px 10px; /* Adds padding inside each link */
+  border-radius: 5px; /* Adds rounded corners to the links */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* General hover styles for all nav links */
+nav a:hover {
+  background-color: #f0f0f0; /* Background color change on hover */
+  color: #000; /* Change text color on hover */
+}
+
+/* Exclude links containing icons from the hover styles */
+nav a.account-icon:hover {
+  background-color: transparent; /* No background color change */
+  color: inherit; /* Preserve the original color */
+  transform: none; /* Prevent any unintended effects */
+}
+
+/* Dropdown container */
+nav .dropdown {
+  position: relative; /* Position relative for dropdown-menu to align properly */
+  display: inline-block; /* Keep it inline with other navigation items */
+}
+
+/* Dropdown menu */
+nav .dropdown-menu {
+  display: none; /* Initially hide the dropdown */
+  position: absolute; /* Position relative to the parent */
+  top: 100%; /* Aligns directly below the icon */
+  right: 0; /* Aligns the menu to the right of the icon */
+  background-color: #fff; /* White background for the dropdown */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  border-radius: 5px; /* Rounded corners */
+  min-width: 120px; /* Minimum width of the dropdown menu */
+  z-index: 10; /* Ensures it appears above other content */
+  padding: 5px 0; /* Adds padding inside the dropdown */
+}
+
+/* Links inside the dropdown */
+nav .dropdown-menu a {
+  display: block; /* Makes each link take up full width */
+  padding: 8px 15px; /* Adds padding for clickable area */
+  color: #333; /* Text color */
+  text-decoration: none; /* Removes underline */
+  font-size: 0.9em; /* Slightly smaller font */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for dropdown links */
+nav .dropdown-menu a:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+  color: #000; /* Text color on hover */
+}
+
+/* Show the dropdown on hover */
+nav .dropdown:hover .dropdown-menu {
+  display: block; /* Shows the dropdown menu when hovered */
+}

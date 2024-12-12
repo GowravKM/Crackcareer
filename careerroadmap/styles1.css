@@ -1,0 +1,255 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  nav .account-icon i {
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    margin-right: 5px;
+    background-color: #D3D3D3;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  nav .account-icon  i:hover {
+    color: black;
+    transform: translateY(-3px) scale(1.1);
+  }
+/* Body */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003366; /* Navy Blue */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo .logo-icon {
+    margin-right: 10px;
+}
+
+header .logo .logo-icon img {
+    width: 40px;
+    height: 40px;
+    fill: none;
+    stroke: #8BC34A; /* Bright Green for the icon */
+}
+
+header .logo .logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #a2bcd8; /* Navy Blue for the text */
+}
+
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    align-items: center; /* Centers the links vertically */
+    gap: 20px; /* Adds spacing between each link */
+    padding: 10px 0; /* Adds top and bottom padding */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: #fff; /* Link color */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 5px 10px; /* Adds padding inside each link */
+    border-radius: 5px; /* Adds rounded corners to the links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* General hover styles for all nav links */
+nav a:hover {
+    background-color: #f0f0f0; /* Background color change on hover */
+    color: #000; /* Change text color on hover */
+}
+
+/* Exclude links containing icons from the hover styles */
+nav a.account-icon:hover {
+    background-color: transparent; /* No background color change */
+    color: inherit; /* Preserve the original color */
+    transform: none; /* Prevent any unintended effects */
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+    background-color: #003366; /* Navy Blue */
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #66FF66; /* Bright Green */
+    margin: 20px 0;
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.explore-btn {
+    background-color: #66FF66; /* Bright Green */
+    color: white;
+}
+
+.quiz-btn {
+    border: 2px solid #9db1c5;
+    color: white;
+    background-color: #50f250;
+}
+
+/* Featured Careers Section */
+.featured-careers {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.featured-careers h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.career-item {
+    background-image: url('images\1.webp');
+    background-size: cover; /* Ensures the background covers the entire div */
+    background-position: center; /* Centers the background image */
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Add hover effect to enhance interaction */
+.career-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.career-item h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #2E4053; /* Navy Blue */
+}
+
+.career-item p {
+    font-size: 1rem;
+    color: #8BC34A; /* Bright Green */
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: #8BC34A; /* Bright Green */
+    text-decoration: none;
+    border: 2px solid #8BC34A; /* Matching border */
+}
+
+/* Footer */
+footer {
+    background-color: #003366; /* Navy Blue */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+footer .contact-info {
+    margin-top: 20px;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+
+footer .contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Dropdown container */
+nav .dropdown {
+    position: relative; /* Position relative for dropdown-menu to align properly */
+    display: inline-block; /* Keep it inline with other navigation items */
+}
+
+/* Dropdown menu */
+nav .dropdown-menu {
+    display: none; /* Initially hide the dropdown */
+    position: absolute; /* Position relative to the parent */
+    top: 100%; /* Aligns directly below the icon */
+    right: 0; /* Aligns the menu to the right of the icon */
+    background-color: #fff; /* White background for the dropdown */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    border-radius: 5px; /* Rounded corners */
+    min-width: 120px; /* Minimum width of the dropdown menu */
+    z-index: 10; /* Ensures it appears above other content */
+    padding: 5px 0; /* Adds padding inside the dropdown */
+}
+
+/* Links inside the dropdown */
+nav .dropdown-menu a {
+    display: block; /* Makes each link take up full width */
+    padding: 8px 15px; /* Adds padding for clickable area */
+    color: #333; /* Text color */
+    text-decoration: none; /* Removes underline */
+    font-size: 0.9em; /* Slightly smaller font */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for dropdown links */
+nav .dropdown-menu a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+    color: #000; /* Text color on hover */
+}
+
+/* Show the dropdown on hover */
+nav .dropdown:hover .dropdown-menu {
+    display: block; /* Shows the dropdown menu when hovered */
+}

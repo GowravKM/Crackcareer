@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="levels.css">
+  <title>12th Grade Roadmap</title>
+  <title>BE/B.Tech Roadmap</title>
+  <header>
+    <div class="logo">
+        <div class="logo-icon">
+            <!-- Stylized "C" with arrows (using an SVG or placeholder for illustration) -->
+            <img src="/images/ctc.jpg" width="30" height="30" style="border: none; background: none;">
+            </svg>
+        </div>
+        <div class="logo-text">CrackTheCareer</div>
+    </div>
+    <nav>
+        
+            <a href="/careerroadmap/index1.html">Home</a>
+            <a href="#">About</a>
+            <a href="#contact-section">Contact</a>
+            <a href="">Resources</a>
+            <div class="dropdown">
+              <a href="#" class="account-icon">
+                  <i class="fa-solid fa-user"></i>
+              </a>
+              <div class="dropdown-menu">
+                  <a id="logoutButton" href="#">Logout</a>
+              </div>
+          </div>
+        
+        
+    </nav>
+  </header>
+
+</head>
+<body>
+  <div class="roadmap-container">
+    <h1>BE/B.Tech Roadmap: Steps to Becoming a Software Engineer</h1>
+    <p class="intro">Here's what you need to master during your BE/B.Tech program to excel in the field of software engineering.</p>
+    <div class="flowchart">
+      <!-- Sub-topic 1: Core Computer Science Subjects -->
+      <div class="roadmap-level">
+        <div class="roadmap-box math-box">
+          <h2>Core Computer Science Subjects</h2>
+          
+          <ul>
+            <li>Master Data Structures and Algorithms</li>
+            <li>Learn Database Management Systems (SQL, NoSQL)</li>
+            <li>Understand Operating Systems and Computer Networks</li>
+          </ul>
+          <p><strong>Resources:</strong> CS50 by Harvard, GeeksforGeeks, and Coursera</p>
+          <button onclick="window.location.href='core-cs.html'">Learn More</button>
+        </div>
+        <div class="arrow"></div>
+      </div>
+
+      <!-- Sub-topic 2: Development Skills -->
+      <div class="roadmap-level">
+        <div class="roadmap-box programming-box">
+          <h2>Development Skills</h2>
+          
+          <ul>
+            <li>Learn Frontend (HTML, CSS, JavaScript) and Backend (Node.js, Django)</li>
+            <li>Build Full-Stack Web Applications</li>
+            <li>Work on Mobile Development (React Native, Flutter)</li>
+          </ul>
+          <p><strong>Resources:</strong> FreeCodeCamp, Codecademy, and Udemy</p>
+          <button onclick="window.location.href='development-skills.html'">Learn More</button>
+        </div>
+        <div class="arrow"></div>
+      </div>
+
+      <!-- Sub-topic 3: Real-World Projects and Internships -->
+      <div class="roadmap-level">
+        <div class="roadmap-box logic-box">
+          <h2>Real-World Projects & Internships</h2>
+          
+          <ul>
+            <li>Contribute to Open Source Projects</li>
+            <li>Participate in Hackathons and Competitions</li>
+            <li>Gain Experience through Internships</li>
+          </ul>
+          <p><strong>Resources:</strong> GitHub, Kaggle, and LinkedIn</p>
+          <button onclick="window.location.href='projects-internships.html'">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">FAQs</a>
+    </div>
+    <div class="contact-info">
+        <p>Email: info@crackthecareer.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("logoutButton").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        // Redirect to index.html
+        window.location.href = "../careerroadmap/index.html";
+    });
+  </script>
+</body>
+</html>
++

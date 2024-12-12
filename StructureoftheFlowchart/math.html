@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <title>Basic Mathematics</title>
+  <header>
+    <div class="logo">
+        <div class="logo-icon">
+            <!-- Stylized "C" with arrows (using an SVG or placeholder for illustration) -->
+            <img src="/images/ctc.jpg" width="30" height="30" style="border: none; background: none;">
+            </svg>
+        </div>
+        <div class="logo-text">CrackTheCareer</div>
+    </div>
+    <nav>
+        
+            <a href="/careerroadmap/index1.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#contact-section">Contact</a>
+            <a href="Resources.html">Resources</a>
+            <div class="dropdown">
+              <a href="#" class="account-icon">
+                  <i class="fa-solid fa-user"></i>
+              </a>
+              <div class="dropdown-menu">
+                  <a id="logoutButton" href="#">Logout</a>
+              </div>
+          </div>
+        
+    </nav>
+  </header>
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Basic Mathematics for Software Engineering</h1>
+    <p>Mathematics is a cornerstone of software engineering. Mastering algebra, geometry, and logic will help you understand programming concepts and algorithms.</p>
+    
+    <h2>Topics to Focus On</h2>
+    <ul>
+      <li><strong>Algebra:</strong> Solve equations, understand variables, and linear functions.</li>
+      <li><strong>Geometry:</strong> Understand shapes, angles, and coordinate systems.</li>
+      <li><strong>Probability:</strong> Learn basic statistics and probabilities.</li>
+    </ul>
+    
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="https://www.khanacademy.org/math" target="_blank">Khan Academy - Mathematics</a></li>
+      <li><a href="https://brilliant.org" target="_blank">Brilliant.org - Math and Logic</a></li>
+    </ul>
+    
+    <h2>Examples</h2>
+    <p><strong>Example 1:</strong> Solve for x: 2x + 5 = 15</p>
+    <p><strong>Solution:</strong> Subtract 5 from both sides, then divide by 2: x = 5</p>
+    
+    <p><strong>Example 2:</strong> Find the area of a triangle with a base of 10 cm and a height of 5 cm.</p>
+    <p><strong>Solution:</strong> Area = 1/2 × base × height = 1/2 × 10 × 5 = 25 cm²</p>
+  </div>
+
+  <section id="contact-section">
+    <footer>
+      <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">FAQs</a>
+      </div>
+      <div class="contact-info">
+          <p>Email: info@crackthecareer.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+      </div>
+    </footer>
+  </section>
+  <script>
+    document.getElementById("logoutButton").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        // Redirect to index.html
+        window.location.href = "../careerroadmap/index.html";
+    });
+</script>
+
+</body>
+</html>

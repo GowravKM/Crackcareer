@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="levels.css">
+  <title>Advanced Level Roadmap</title>
+  <header>
+    <div class="logo">
+        <div class="logo-icon">
+            <!-- Stylized "C" with arrows (using an SVG or placeholder for illustration) -->
+            <img src="/images/ctc.jpg" width="30" height="30" style="border: none; background: none;">
+            </svg>
+        </div>
+        <div class="logo-text">CrackTheCareer</div>
+    </div>
+    <nav>
+        <a href="/careerroadmap/index1.html">Home</a>
+        <a href="#">About</a>
+        <a href="#contact-section">Contact</a>
+        <a href="#">Resources</a>
+        <div class="dropdown">
+          <a href="#" class="account-icon">
+              <i class="fa-solid fa-user"></i>
+          </a>
+          <div class="dropdown-menu">
+              <a id="logoutButton" href="#">Logout</a>
+          </div>
+    </div>
+    </nav>
+  </header>
+  
+</head>
+<body>
+  <div class="roadmap-container">
+    <h1>Advanced Level Roadmap: Mastering Software Engineering</h1>
+    <p class="intro">Here’s what you need to focus on at the advanced level to become an expert in software engineering.</p>
+    <div class="flowchart">
+      <!-- Sub-topic 1: Specialization in a Field -->
+      <div class="roadmap-level">
+        <div class="roadmap-box specialization-box">
+          <h2>Specialization in a Field</h2>
+          
+          <ul>
+            <li>Focus on AI/ML, Cloud Computing, or Blockchain</li>
+            <li>Master Tools and Frameworks (e.g., TensorFlow, AWS, Ethereum)</li>
+            <li>Stay Updated with Industry Trends</li>
+          </ul>
+          <p><strong>Resources:</strong> Stanford AI Courses, Coursera (Google Cloud), and Pluralsight</p>
+          <button onclick="window.location.href='specialization.html'">Learn More</button>
+        </div>
+        <div class="arrow"></div>
+      </div>
+
+      <!-- Sub-topic 2: System Design and Architecture -->
+      <div class="roadmap-level">
+        <div class="roadmap-box system-design-box">
+          <h2>System Design & Architecture</h2>
+         
+          <ul>
+            <li>Learn High-Level System Design (Load Balancers, Distributed Systems)</li>
+            <li>Understand Scalable Architectures</li>
+            <li>Prepare for Interviews (LLD and HLD Questions)</li>
+          </ul>
+          <p><strong>Resources:</strong> System Design Primer, Grokking System Design, and YouTube (Gaurav Sen)</p>
+          <button onclick="window.location.href='system-design.html'">Learn More</button>
+        </div>
+        <div class="arrow"></div>
+      </div>
+
+      <!-- Sub-topic 3: Contributing to the Industry -->
+      <div class="roadmap-level">
+        <div class="roadmap-box contribution-box">
+          <h2>Contributing to the Industry</h2>
+       
+          <ul>
+            <li>Contribute to Open Source Projects (e.g., GitHub)</li>
+            <li>Write Technical Blogs or Create Tutorials</li>
+            <li>Mentor Junior Developers</li>
+          </ul>
+          <p><strong>Resources:</strong> GitHub Projects, Medium (Blogging), and Dev.to</p>
+          <button onclick="window.location.href='industry-contribution.html'">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact-section">
+    <footer>
+      <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">FAQs</a>
+      </div>
+      <div class="contact-info">
+          <p>Email: info@crackthecareer.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+      </div>
+  </footer>
+  </section>
+  <script>
+    document.getElementById("logoutButton").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        // Redirect to index.html
+        window.location.href = "../careerroadmap/index.html";
+    });
+  </script>
+</body>
+</html>

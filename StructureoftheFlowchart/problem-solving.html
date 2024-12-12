@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <title>Problem Solving</title>
+  <header>
+    <div class="logo">
+        <div class="logo-icon">
+            <!-- Stylized "C" with arrows (using an SVG or placeholder for illustration) -->
+            <img src="/images/ctc.jpg" width="30" height="30" style="border: none; background: none;">
+            </svg>
+        </div>
+        <div class="logo-text">CrackTheCareer</div>
+    </div>
+    <nav>
+        
+            <a href="/careerroadmap/index1.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#contact-section">Contact</a>
+            <a href="Resources.html">Resources</a>
+            <div class="dropdown">
+              <a href="#" class="account-icon">
+                  <i class="fa-solid fa-user"></i>
+              </a>
+              <div class="dropdown-menu">
+                  <a id="logoutButton" href="#">Logout</a>
+              </div>
+          </div>
+        
+    </nav>
+  </header>
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Problem Solving for Software Engineering</h1>
+    <p>Problem-solving is a crucial skill for every programmer. It helps you tackle challenges logically and creatively.</p>
+    
+    <h2>Topics to Focus On</h2>
+    <ul>
+      <li>Understanding the problem and breaking it into smaller parts.</li>
+      <li>Using algorithms to find efficient solutions.</li>
+      <li>Testing and debugging your solutions.</li>
+    </ul>
+    
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="https://projecteuler.net" target="_blank">Project Euler - Coding Challenges</a></li>
+      <li><a href="https://www.hackerrank.com" target="_blank">HackerRank - Programming Problems</a></li>
+    </ul>
+    
+    <h2>Examples</h2>
+    <p><strong>Example 1:</strong> Write a program to reverse a string.</p>
+    <pre><code>
+string = "hello"
+reversed_string = string[::-1]
+print(reversed_string)
+    </code></pre>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logical Thinking</title>
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Logical Thinking for Software Engineers</h1>
+    <p>Logical thinking helps you design efficient algorithms and make better decisions when solving problems.</p>
+    
+    <h2>Topics to Focus On</h2>
+    <ul>
+      <li>Learning deductive and inductive reasoning.</li>
+      <li>Understanding logical operators and truth tables.</li>
+      <li>Solving puzzles to enhance critical thinking.</li>
+    </ul>
+    
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="https://www.braingle.com" target="_blank">Braingle - Brain Teasers</a></li>
+      <li><a href="https://www.lumosity.com" target="_blank">Lumosity - Logic Games</a></li>
+    </ul>
+    
+    <h2>Examples</h2>
+    <p><strong>Example:</strong> Solve the puzzle: "What comes next in the sequence? 2, 4, 8, 16, ..."</p>
+    <p><strong>Answer:</strong> The next number is 32 (doubling the previous number).</p>
+  </div>
+
+  <section id="contact-section">
+    <footer>
+      <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">FAQs</a>
+      </div>
+      <div class="contact-info">
+          <p>Email: info@crackthecareer.com</p>
+          <p>Phone: +123 456 7890</p>
+          <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+      </div>
+    </footer>
+  </section>
+  <script>
+    document.getElementById("logoutButton").addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default link behavior
+        // Redirect to index.html
+        window.location.href = "../careerroadmap/index.html";
+    });
+</script>
+</body>
+</html>

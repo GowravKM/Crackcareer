@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="levels.css">
+  <title>10th Grade Roadmap</title>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">
+                <!-- Stylized "C" with arrows (using an SVG or placeholder for illustration) -->
+                <img src="/images/ctc.jpg" width="30" height="30" style="border: none; background: none;">
+                </svg>
+            </div>
+            <div class="logo-text">CrackTheCareer</div>
+        </div>
+        <nav>
+          
+                <a href="/careerroadmap/index1.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#contact-section">Contact</a>
+                <a href="Resources.html">Resources</a>
+                <div class="dropdown">
+                  <a href="#" class="account-icon">
+                      <i class="fa-solid fa-user"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                      <a id="logoutButton" href="#">Logout</a>
+                  </div>
+              </div>
+            
+        </nav>
+    </header>
+
+</head>
+<body>
+  <div class="roadmap-container">
+    <h1>10th Grade Roadmap: Steps to Becoming a Software Engineer</h1>
+    <p class="intro">Explore the essential skills and knowledge you need to build a solid foundation for a career in software engineering.</p>
+    <div class="flowchart">
+      <!-- Sub-topic 1: Mathematics -->
+      <div class="roadmap-level">
+        <div class="roadmap-box math-box">
+          <h2>Mathematics</h2>
+          
+          <ul>
+            <li>Understand basic Algebra and Geometry</li>
+            <li>Learn about Probability and Statistics</li>
+            <li>Practice solving logical puzzles</li>
+          </ul>
+          <p><strong>Resources:</strong> Khan Academy, Brilliant.org, and CBSE Textbooks</p>
+          <button onclick="window.location.href='math.html'">Learn More</button>
+        </div>
+        
+        <div class="arrow"></div>
+      </div>
+
+      <!-- Sub-topic 2: Basic Programming -->
+      <div class="roadmap-level">
+        <div class="roadmap-box programming-box">
+          <h2>Basic Programming</h2>
+         
+          <ul>
+            <li>Start with Python or JavaScript basics</li>
+            <li>Experiment with visual programming tools like Scratch</li>
+            <li>Build simple projects like a calculator or a guessing game</li>
+          </ul>
+          <p><strong>Resources:</strong> Code.org, W3Schools, and Scratch</p>
+          <button onclick="window.location.href='basic-programming.html'">Learn More</button>
+        </div>
+        <div class="arrow"></div>
+      </div>
+
+      <!-- Sub-topic 3: Logical Thinking and Problem Solving -->
+      <div class="roadmap-level">
+        <div class="roadmap-box logic-box">
+          <h2>Problem Solving & Logical Thinking</h2>
+          
+          <ul>
+            <li>Solve puzzles and riddles to improve logical skills</li>
+            <li>Learn about basic algorithms (e.g., Sorting, Searching)</li>
+            <li>Play coding games like LightBot or CodeCombat</li>
+          </ul>
+          <p><strong>Resources:</strong> HackerRank, LeetCode (Easy problems), and Logical Thinking Books</p>
+          <button onclick="window.location.href='problem-solving.html'">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact-section">
+  <footer>
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">FAQs</a>
+    </div>
+    <div class="contact-info">
+        <p>Email: info@crackthecareer.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+    </div>
+  </footer>
+</section>
+<script>
+  document.getElementById("logoutButton").addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      // Redirect to index.html
+      window.location.href = "../careerroadmap/index.html";
+  });
+</script>
+</body>
+</html>
+
+
